@@ -14,8 +14,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: moose56
-baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://moose56.com"
+
+# Google services
+google_analytics: UA-2011603-3
 
 # Build settings
 markdown: kramdown
