@@ -8,7 +8,7 @@ date:   2017-06-05 09:00:00
 
 Streams in Node.js are really useful for working with large files. If you don't use streams to read large files in Node.js you will get errors.
 
-Here are some example functions that demonstrate Highlands working with big files.
+Here are some example functions that demonstrate Highland working with big files.
 
 For test data I downloaded a dump of [stackoverflow.com comments](https://archive.org/download/stackexchange/stackoverflow.com-Comments.7z). Unzipped this file is just over 14GB. I just copied it a couple of times to get multiple files.
 
@@ -48,6 +48,15 @@ function firstLines() {
     )
     .each(result => console.log(result));
 }
+```
+
+### First line of single file
+
+```javascript
+_(fs.createReadStream('./Comments1.xml'))
+  .split()
+  .take(1)
+  .pull((err, line) => console.log(line));
 ```
 
 ### Count lines
