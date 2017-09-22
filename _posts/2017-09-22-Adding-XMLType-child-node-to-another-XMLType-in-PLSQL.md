@@ -8,7 +8,7 @@ Adding a child node to an XMLType in PL/SQL is a lot fiddlier than I expected. H
 
 ### Merge XMLType
 
-```plsql
+```sql
 ----------------------------------------------------------------------------
 FUNCTION fw_xml_append_child(p_parent IN XMLTYPE, p_child IN XMLTYPE)
 ----------------------------------------------------------------------------
