@@ -53,10 +53,12 @@ function firstLines() {
 ### First line of single file
 
 ```javascript
-_(fs.createReadStream('./Comments1.xml'))
-  .split()
-  .take(1)
-  .pull((err, line) => console.log(line));
+function firstLine() {
+  _(fs.createReadStream('./Comments1.xml'))
+    .split()
+    .take(1)
+    .pull((err, line) => console.log(line));
+}
 ```
 
 ### Count lines
