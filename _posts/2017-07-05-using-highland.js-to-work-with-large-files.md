@@ -2,6 +2,7 @@
 layout: post
 title:  "Using highland.js to work with large files"
 date:   2017-06-05 09:00:00
+categories: javascript node.js
 ---
 
 [highland.js](http://highlandjs.org) is a really useful library for working with data in JavaScript as streams. It gives you nice, easily understandable chains of transforms to data.
