@@ -73,7 +73,7 @@ This is a big qurstion that I am not going to attempt to answer in detail. Basic
 
 ### How to create a REST end point
 
-See this [building a RESTful web service](https://spring.io/guides/gs/actuator-service/) guild. In essesnce decorate a class with the `@Controller` annotation and a methond with the `@ResponseBody` and `@GetMapping` annotateions e.g.
+See this [building a RESTful web service](https://spring.io/guides/gs/actuator-service/) guild. In essesnce decorate a class with the `@Controller` annotation and a methond with the `@ResponseBody` and `@GetMapping` annotations e.g.
 
 ```java
 @Controller
