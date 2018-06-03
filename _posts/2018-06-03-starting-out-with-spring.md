@@ -61,7 +61,7 @@ I like this as when starting with a new technolgy it's always annoying if you ha
 
 ### How do you deploy the app
 
-What's really nice about Spring Boot is that it builds your app into a single .jar file which includes Tomcat. This means to you use `java -jar myapp.jar` command and your app will be up and running with its own internal version of Tomcat. This makes it really easy to have something that works quickly without having to become an expert in Tomcat.
+What's really nice about Spring Boot is that it builds your app into a single .jar file which includes Tomcat. This means you use the `java -jar myapp.jar` command and your app will be up and running with its own internal version of Tomcat. This makes it really easy to have something that works quickly without having to become an expert in Tomcat.
 
 ### How does data access work
 
