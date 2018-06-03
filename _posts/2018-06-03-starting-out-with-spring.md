@@ -14,7 +14,7 @@ When starting out in a new web technology there are a general set of questions I
 
 - [Is it fee?](#is-it-free)
 - [What tools are available?](#what-tools-are-available)
-- [What is the documentation like](#what-is-the-documentaiton-like)
+- [What is the documentation like](#what-is-the-documentation-like)
 - [What version of the language is supported?](#what-version-of-the-language-is-supported)
 - [Where do you start?](#where-do-you-start)
 - [How do you deploy the app?](#how-do-you-deploy-the-app)
