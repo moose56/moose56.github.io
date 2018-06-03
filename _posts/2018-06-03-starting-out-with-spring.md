@@ -124,7 +124,7 @@ I really like Spring. It provides out of the box answers to common web developme
 
 There were a couple of "why does this now work?" questons when I was getting my first project setup.
 
-1. Red warning text when running the project:
+#### Red warning text when running the project:
 
 ```
 WARNING: An illegal reflective access operation has occurred
@@ -136,7 +136,7 @@ WARNING: All illegal access operations will be denied in a future release
 
 This is nothing to worry about and is caused by using Java 10 and should not be displayed in the next version of Spring.
 
-2. Tests would not run
+#### Tests would not run
 
 I had a project that included the `spring-boot-starter-data-jpa` and when I ran the default test I got a big error.
 
