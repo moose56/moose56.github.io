@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>oracle on moose56</title>
-    <link>http://moose56.com/categories/oracle/</link>
+    <link>https://moose56.com/categories/oracle/</link>
     <description>Recent content in oracle on moose56</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Fri, 22 Sep 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://moose56.com/categories/oracle/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://moose56.com/categories/oracle/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Adding XMLType child node to another XMLType</title>
-      <link>http://moose56.com/2017/09/22/adding-xmltype-child-node-to-another-xmltype/</link>
+      <link>https://moose56.com/2017/09/22/adding-xmltype-child-node-to-another-xmltype/</link>
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://moose56.com/2017/09/22/adding-xmltype-child-node-to-another-xmltype/</guid>
+      <guid>https://moose56.com/2017/09/22/adding-xmltype-child-node-to-another-xmltype/</guid>
       <description>&lt;p&gt;Adding a child node to an XMLType in PL/SQL is a lot fiddlier than I expected. Here I am documenting the solution I came up with, so I can find it again.&lt;/p&gt;</description>
     </item>
     

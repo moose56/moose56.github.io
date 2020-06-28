@@ -2,40 +2,40 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>moose56</title>
-    <link>http://moose56.com/</link>
+    <link>https://moose56.com/</link>
     <description>Recent content on moose56</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-gb</language>
     <lastBuildDate>Sun, 03 Jun 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://moose56.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://moose56.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Starting out with Spring</title>
-      <link>http://moose56.com/2018/06/03/starting-out-with-spring/</link>
+      <link>https://moose56.com/2018/06/03/starting-out-with-spring/</link>
       <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://moose56.com/2018/06/03/starting-out-with-spring/</guid>
+      <guid>https://moose56.com/2018/06/03/starting-out-with-spring/</guid>
       <description>&lt;p&gt;I have been a .NET and Node.js web developer for the last 10 years. Building sites and APIs with ASP.NET, ASP.MVC and Express.js. Recently I&amp;rsquo;ve been working on some projects that are built with Java using various different Java technologies such as JSP and JSF.&lt;/p&gt;
 &lt;p&gt;While I have been getting my head around this new stack I came across the &lt;a href=&#34;https://spring.io/&#34;&gt;Spring framework&lt;/a&gt; and really liked the way it approached building web applications. The &lt;a href=&#34;https://spring.io/projects/spring-boot&#34;&gt;Spring Boot&lt;/a&gt; project is really amazing and solves a lot of the &amp;ldquo;where do I start?&amp;rdquo; questions when using Spring.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Adding XMLType child node to another XMLType</title>
-      <link>http://moose56.com/2017/09/22/adding-xmltype-child-node-to-another-xmltype/</link>
+      <link>https://moose56.com/2017/09/22/adding-xmltype-child-node-to-another-xmltype/</link>
       <pubDate>Fri, 22 Sep 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://moose56.com/2017/09/22/adding-xmltype-child-node-to-another-xmltype/</guid>
+      <guid>https://moose56.com/2017/09/22/adding-xmltype-child-node-to-another-xmltype/</guid>
       <description>&lt;p&gt;Adding a child node to an XMLType in PL/SQL is a lot fiddlier than I expected. Here I am documenting the solution I came up with, so I can find it again.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Using highland.js to work with large files</title>
-      <link>http://moose56.com/2017/06/05/using-highland.js-to-work-with-large-files/</link>
+      <link>https://moose56.com/2017/06/05/using-highland.js-to-work-with-large-files/</link>
       <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>http://moose56.com/2017/06/05/using-highland.js-to-work-with-large-files/</guid>
+      <guid>https://moose56.com/2017/06/05/using-highland.js-to-work-with-large-files/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://highlandjs.org&#34;&gt;highland.js&lt;/a&gt; is a really useful library for working with data in JavaScript as streams. It gives you nice, easily understandable chains of transforms to data.&lt;/p&gt;
 &lt;p&gt;Streams in Node.js are really useful for working with large files. If you don&amp;rsquo;t use streams to read large files in Node.js you will get errors.&lt;/p&gt;
 &lt;p&gt;Here are some example functions that demonstrate Highland working with big files.&lt;/p&gt;</description>
