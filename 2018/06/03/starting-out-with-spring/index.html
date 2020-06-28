@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Starting out with Spring &middot; moose56</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://moose56.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://moose56.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://moose56.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://moose56.com/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0b ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://moose56.com/"><h1>moose56</h1></a>
+      <p class="lead">
+       Notes on code 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://moose56.com/">Home</a> </li>
+        <li><a href="https://github.com/moose56"> Github </a></li><li><a href="https://www.linkedin.com/in/david-madden-37928971/"> LinkedIn </a></li><li><a href="https://twitter.com/moose56"> Twitter </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2020. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Starting out with Spring</h1>
+  <time datetime=2018-06-03T00:00:00Z class="post-date">Sun, Jun 3, 2018</time>
+  <p>I have been a .NET and Node.js web developer for the last 10 years. Building sites and APIs with ASP.NET, ASP.MVC and Express.js. Recently I&rsquo;ve been working on some projects that are built with Java using various different Java technologies such as JSP and JSF.</p>
+<p>While I have been getting my head around this new stack I came across the <a href="https://spring.io/">Spring framework</a> and really liked the way it approached building web applications. The <a href="https://spring.io/projects/spring-boot">Spring Boot</a> project is really amazing and solves a lot of the &ldquo;where do I start?&rdquo; questions when using Spring.</p>
+<p>When starting out in a new web technology there are a general set of questions I start with:</p>
+<ul>
+<li><a href="#is-it-free">Is it fee?</a></li>
+<li><a href="#what-tools-are-available">What tools are available?</a></li>
+<li><a href="#what-is-the-documentation-like">What is the documentation like</a></li>
+<li><a href="#what-version-of-the-language-is-supported">What version of the language is supported?</a></li>
+<li><a href="#where-do-you-start">Where do you start?</a></li>
+<li><a href="#how-do-you-deploy-the-app">How do you deploy the app?</a></li>
+<li><a href="#how-does-data-access-work">How does data access work?</a></li>
+<li><a href="#what-logging-tools-are-available">What logging tools are available?</a></li>
+<li><a href="#how-to-create-a-rest-end-point">How to create a REST end point?</a></li>
+<li><a href="#how-to-render-a-web-page">How to render a web page?</a></li>
+</ul>
+<p>This is not a definitive list by any means, but acts as good starting point for getting my head around it. Here are my findings after a weekend of spelunking into the Spring world.</p>
+<h3 id="is-it-free">Is it free</h3>
+<p>Yes. Spring is released under the Apache License 2.0.</p>
+<h3 id="what-tools-are-available">What tools are available</h3>
+<p>In short loads:</p>
+<ul>
+<li><a href="https://netbeans.org/">NetBeans</a></li>
+<li><a href="https://spring.io/tools">Spring Tool Suite</a> (Built on top of Eclipse)</li>
+<li><a href="https://www.jetbrains.com/idea/">IntelliJ</a></li>
+</ul>
+<p>I played with them all and found I prefer IntelliJ. I already had a subscription to <a href="https://www.jetbrains.com/">JetBrains</a> as I use <a href="https://www.jetbrains.com/webstorm/">WebStorm</a> a lot as well as some of their other tools, so I didn&rsquo;t have to shed a load of cash for it which might put people off. NetBeans and Spring Tool Suite are both free so there is no barrier to entry.</p>
+<h3 id="what-is-the-documentation-like">What is the documentation like</h3>
+<p>Great. There are a number of <a href="https://spring.io/guides/gs/accessing-data-jpa">guides</a> available which are up to date and really helpful.</p>
+<p>There is also an excellent YouTube channel <a href="https://www.youtube.com/user/SpringSourceDev/featured">SpringDeveloper</a> which has lots of useful presentations.</p>
+<p>Another website that comes up all the time when searching for information is <a href="http://www.baeldung.com/">baeldung.com</a>.</p>
+<p>This all makes life a lot easier when starting out. There is nothing worse than difficult to use or out of date documentation.</p>
+<h3 id="what-version-of-the-language-is-supported">What version of the language is supported</h3>
+<p>At this point (June 2018) Java 10 is out, Spring is at version 5.0.6 and Spring Boot is 2.0.2. Spring requires at least Java 8 and works with Java 10.</p>
+<p>I like this as when starting with a new technology it&rsquo;s always annoying if you have to use an older version of a language or libraries.</p>
+<h3 id="where-do-you-start">Where do you start</h3>
+<p><a href="http://start.spring.io">start.spring.io</a>. This tool will generate a template Spring Boot application which you can open in your IDE of choice and get coding. It allows you to pick common dependencies and include them in the pom.xml file for the project.</p>
+<h3 id="how-do-you-deploy-the-app">How do you deploy the app</h3>
+<p>What&rsquo;s really nice about Spring Boot is that it builds your app into a single .jar file which includes Tomcat. This means you use the <code>java -jar myapp.jar</code> command, and your app will be up and running with its own internal version of Tomcat. This makes it really easy to have something that works quickly without having to become an expert in Tomcat.</p>
+<h3 id="how-does-data-access-work">How does data access work</h3>
+<p>This is a big question that I am not going to attempt to answer in detail. Basically if you add the dependency <code>spring-boot-starter-data-jpa</code> to your project this will add in a load of data access related tools, the main one being <a href="http://hibernate.org/orm/">Hibernate</a>. This means you have an ORM and is extendable when things ger more complicated that 1 object mapping to 1 table.</p>
+<h3 id="what-logging-tools-are-available">What logging tools are available</h3>
+<p><a href="https://logback.qos.ch/">Logback</a> is included as part of the <code>spring-boot-starter-web</code> dependency. For more details on how to tweak the settings or switch to <a href="https://logging.apache.org/log4j/2.x/">log4j 2</a> see the <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/howto-logging.html">logging how-to</a> guide.</p>
+<h3 id="how-to-create-a-rest-end-point">How to create a REST end point</h3>
+<p>See this <a href="https://spring.io/guides/gs/actuator-service/">building a RESTful web service</a> guild. In essence decorate a class with the <code>@Controller</code> annotation and a method with the <code>@ResponseBody</code> and <code>@GetMapping</code> annotations e.g.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Controller</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HomeController</span> <span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@GetMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/home&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#a6e22e">@ResponseBody</span>
+    <span style="color:#66d9ef">public</span> Greeting <span style="color:#a6e22e">sayHello</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">new</span> Greeting<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;Hello&#34;</span><span style="color:#f92672">);</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+
+<span style="color:#75715e">// returns
+</span><span style="color:#75715e">// {
+</span><span style="color:#75715e">//   &#34;message&#34;: &#34;Hello&#34;
+</span><span style="color:#75715e">// }
+</span></code></pre></div><h3 id="how-to-render-a-web-page">How to render a web page</h3>
+<p>This works in a similar way to the above. Add this dependency to the pom.xml file:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>org.springframework.boot<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>spring-boot-starter-thymeleaf<span style="color:#f92672">&lt;/artifactId&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+</code></pre></div><p>To use thymeleaf templates and then change the controller to be:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#a6e22e">@Controller</span>
+<span style="color:#66d9ef">public</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HomeController</span> <span style="color:#f92672">{</span>
+    <span style="color:#a6e22e">@GetMapping</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;/home&#34;</span><span style="color:#f92672">)</span>
+    <span style="color:#66d9ef">public</span> String <span style="color:#a6e22e">sayHello</span><span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;hello&#34;</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
+</code></pre></div><p>This will render a template called <code>hello.html</code>.</p>
+<h2 id="wrap-up">Wrap up</h2>
+<p>I really like Spring. It provides out of the box answers to common web development questions. The documentation and the tooling are also good.</p>
+<h3 id="issues-encountered">Issues encountered</h3>
+<p>There were a couple of &ldquo;why does this now work?&rdquo; questions when I was getting my first project setup.</p>
+<h4 id="red-warning-text-when-running-the-project">Red warning text when running the project:</h4>
+<pre><code>WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.springframework.cglib.core.ReflectUtils$1 (file:/Users/blah/.m2/repository/org/springframework/spring-core/5.0.6.RELEASE/spring-core-5.0.6.RELEASE.jar) to method java.lang.ClassLoader.defineClass(java.lang.String,byte[],int,int,java.security.ProtectionDomain)
+WARNING: Please consider reporting this to the maintainers of org.springframework.cglib.core.ReflectUtils$1
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+</code></pre><p>This is nothing to worry about and is caused by using Java 10 and should not be displayed in the next version of Spring.</p>
+<h4 id="tests-would-not-run">Tests would not run</h4>
+<p>I had a project that included the <code>spring-boot-starter-data-jpa</code> and when I ran the default test I got a big error.</p>
+<p>I asked about it on <a href="https://github.com/spring-io/initializr/issues/678">Github</a> and was directed to a fix. Just include this dependency:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
+    <span style="color:#f92672">&lt;groupId&gt;</span>javax.xml.bind<span style="color:#f92672">&lt;/groupId&gt;</span>
+    <span style="color:#f92672">&lt;artifactId&gt;</span>jaxb-api<span style="color:#f92672">&lt;/artifactId&gt;</span>
+<span style="color:#f92672">&lt;/dependency&gt;</span>
+</code></pre></div><p>Again this was caused by using Java 10.</p>
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>

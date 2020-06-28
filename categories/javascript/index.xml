@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>javascript on moose56</title>
+    <link>http://moose56.com/categories/javascript/</link>
+    <description>Recent content in javascript on moose56</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Mon, 05 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://moose56.com/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using highland.js to work with large files</title>
+      <link>http://moose56.com/2017/06/05/using-highland.js-to-work-with-large-files/</link>
+      <pubDate>Mon, 05 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://moose56.com/2017/06/05/using-highland.js-to-work-with-large-files/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://highlandjs.org&#34;&gt;highland.js&lt;/a&gt; is a really useful library for working with data in JavaScript as streams. It gives you nice, easily understandable chains of transforms to data.&lt;/p&gt;
+&lt;p&gt;Streams in Node.js are really useful for working with large files. If you don&amp;rsquo;t use streams to read large files in Node.js you will get errors.&lt;/p&gt;
+&lt;p&gt;Here are some example functions that demonstrate Highland working with big files.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

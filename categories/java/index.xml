@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>java on moose56</title>
+    <link>http://moose56.com/categories/java/</link>
+    <description>Recent content in java on moose56</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Sun, 03 Jun 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://moose56.com/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Starting out with Spring</title>
+      <link>http://moose56.com/2018/06/03/starting-out-with-spring/</link>
+      <pubDate>Sun, 03 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://moose56.com/2018/06/03/starting-out-with-spring/</guid>
+      <description>&lt;p&gt;I have been a .NET and Node.js web developer for the last 10 years. Building sites and APIs with ASP.NET, ASP.MVC and Express.js. Recently I&amp;rsquo;ve been working on some projects that are built with Java using various different Java technologies such as JSP and JSF.&lt;/p&gt;
+&lt;p&gt;While I have been getting my head around this new stack I came across the &lt;a href=&#34;https://spring.io/&#34;&gt;Spring framework&lt;/a&gt; and really liked the way it approached building web applications. The &lt;a href=&#34;https://spring.io/projects/spring-boot&#34;&gt;Spring Boot&lt;/a&gt; project is really amazing and solves a lot of the &amp;ldquo;where do I start?&amp;rdquo; questions when using Spring.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

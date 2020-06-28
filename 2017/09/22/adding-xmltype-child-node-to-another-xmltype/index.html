@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-gb" lang="en-gb">
+<head>
+  <link href="https://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.73.0" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Adding XMLType child node to another XMLType &middot; moose56</title>
+  <meta name="description" content="" />
+
+  
+  <link type="text/css" rel="stylesheet" href="http://moose56.com/css/print.css" media="print">
+  <link type="text/css" rel="stylesheet" href="http://moose56.com/css/poole.css">
+  <link type="text/css" rel="stylesheet" href="http://moose56.com/css/syntax.css">
+  <link type="text/css" rel="stylesheet" href="http://moose56.com/css/hyde.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|PT+Sans:400,400i,700">
+
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  
+</head>
+
+  <body class="theme-base-0b ">
+  <aside class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://moose56.com/"><h1>moose56</h1></a>
+      <p class="lead">
+       Notes on code 
+      </p>
+    </div>
+
+    <nav>
+      <ul class="sidebar-nav">
+        <li><a href="http://moose56.com/">Home</a> </li>
+        <li><a href="https://github.com/moose56"> Github </a></li><li><a href="https://www.linkedin.com/in/david-madden-37928971/"> LinkedIn </a></li><li><a href="https://twitter.com/moose56"> Twitter </a></li>
+      </ul>
+    </nav>
+
+    <p>&copy; 2020. All rights reserved. </p>
+  </div>
+</aside>
+
+    <main class="content container">
+    <div class="post">
+  <h1>Adding XMLType child node to another XMLType</h1>
+  <time datetime=2017-09-22T00:00:00Z class="post-date">Fri, Sep 22, 2017</time>
+  <p>Adding a child node to an XMLType in PL/SQL is a lot fiddlier than I expected. Here I am documenting the solution I came up with, so I can find it again.</p>
+<h3 id="merge-xmltype">Merge XMLType</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sql" data-lang="sql"><span style="color:#66d9ef">FUNCTION</span> fw_xml_append_child(p_parent <span style="color:#66d9ef">IN</span> XMLTYPE, p_child <span style="color:#66d9ef">IN</span> XMLTYPE)
+  <span style="color:#66d9ef">RETURN</span> XMLTYPE
+<span style="color:#66d9ef">AS</span>
+  l_parent_dom DBMS_XMLDOM.DOMDocument;
+  l_parent_elem DBMS_XMLDOM.DOMElement;
+
+  l_child_dom DBMS_XMLDOM.DOMDocument;
+  l_child_elem DBMS_XMLDOM.DOMElement;
+  l_child_node DBMS_XMLDOM.DOMNode;
+
+  l_import_node DBMS_XMLDOM.DOMNode;
+  l_result_node DBMS_XMLDOM.DOMNODE;
+        
+  l_return XMLTYPE;
+<span style="color:#66d9ef">BEGIN</span>
+  l_parent_dom :<span style="color:#f92672">=</span> DBMS_XMLDOM.NEWDOMDOCUMENT(p_parent);
+  l_parent_elem :<span style="color:#f92672">=</span> DBMS_XMLDOM.GETDOCUMENTELEMENT(l_parent_dom);
+
+  l_child_dom :<span style="color:#f92672">=</span> DBMS_XMLDOM.NEWDOMDOCUMENT(p_child);
+  l_child_elem :<span style="color:#f92672">=</span> DBMS_XMLDOM.GETDOCUMENTELEMENT(l_child_dom);
+  l_child_node :<span style="color:#f92672">=</span> DBMS_XMLDOM.MAKENODE(l_child_elem);
+
+  l_import_node :<span style="color:#f92672">=</span> DBMS_XMLDOM.IMPORTNODE(l_parent_dom, l_child_node, <span style="color:#66d9ef">TRUE</span>);
+  l_result_node :<span style="color:#f92672">=</span> DBMS_XMLDOM.APPENDCHILD(DBMS_XMLDOM.MAKENODE(l_parent_elem), l_import_node);
+
+  l_return :<span style="color:#f92672">=</span> DBMS_XMLDOM.GETXMLTYPE(l_parent_dom);
+
+  DBMS_XMLDOM.FREEDOCUMENT(l_parent_dom);
+  DBMS_XMLDOM.FREEDOCUMENT(l_child_dom);
+        
+  <span style="color:#66d9ef">RETURN</span> l_return;
+<span style="color:#66d9ef">END</span>;
+</code></pre></div>
+</div>
+
+
+    </main>
+
+    
+      
+    
+  </body>
+</html>
