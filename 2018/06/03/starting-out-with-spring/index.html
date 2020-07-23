@@ -91,7 +91,7 @@
 <h3 id="how-do-you-deploy-the-app">How do you deploy the app</h3>
 <p>What&rsquo;s really nice about Spring Boot is that it builds your app into a single .jar file which includes Tomcat. This means you use the <code>java -jar myapp.jar</code> command, and your app will be up and running with its own internal version of Tomcat. This makes it really easy to have something that works quickly without having to become an expert in Tomcat.</p>
 <h3 id="how-does-data-access-work">How does data access work</h3>
-<p>This is a big question that I am not going to attempt to answer in detail. Basically if you add the dependency <code>spring-boot-starter-data-jpa</code> to your project this will add in a load of data access related tools, the main one being <a href="http://hibernate.org/orm/">Hibernate</a>. This means you have an ORM and is extendable when things ger more complicated that 1 object mapping to 1 table.</p>
+<p>This is a big question that I am not going to attempt to answer in detail. Basically if you add the dependency <code>spring-boot-starter-data-jpa</code> to your project this will add in a load of data access related tools, the main one being <a href="http://hibernate.org/orm/">Hibernate</a>. This means you have an ORM, and it&rsquo;s customisable when things get more complicated that 1 object mapping to 1 table.</p>
 <h3 id="what-logging-tools-are-available">What logging tools are available</h3>
 <p><a href="https://logback.qos.ch/">Logback</a> is included as part of the <code>spring-boot-starter-web</code> dependency. For more details on how to tweak the settings or switch to <a href="https://logging.apache.org/log4j/2.x/">log4j 2</a> see the <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/howto-logging.html">logging how-to</a> guide.</p>
 <h3 id="how-to-create-a-rest-end-point">How to create a REST end point</h3>
@@ -136,7 +136,7 @@ WARNING: Use --illegal-access=warn to enable warnings of further illegal reflect
 WARNING: All illegal access operations will be denied in a future release
 </code></pre><p>This is nothing to worry about and is caused by using Java 10 and should not be displayed in the next version of Spring.</p>
 <h4 id="tests-would-not-run">Tests would not run</h4>
-<p>I had a project that included the <code>spring-boot-starter-data-jpa</code> and when I ran the default test I got a big error.</p>
+<p>I had a project that included <code>spring-boot-starter-data-jpa</code> and when I ran the default test I got a big error.</p>
 <p>I asked about it on <a href="https://github.com/spring-io/initializr/issues/678">Github</a> and was directed to a fix. Just include this dependency:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#f92672">&lt;dependency&gt;</span>
     <span style="color:#f92672">&lt;groupId&gt;</span>javax.xml.bind<span style="color:#f92672">&lt;/groupId&gt;</span>
