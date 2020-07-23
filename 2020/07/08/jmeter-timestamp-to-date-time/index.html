@@ -120,20 +120,19 @@ System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span>
 </div><p>The <a href="https://github.com/Tigraine/go-timemilli">go-timemilli</a> module will do this for you with a slight performance improvement.</p>
 <h2 id="excel">Excel</h2>
 <p>This is the fun one&hellip;</p>
-<pre><code class="language-{linenos=table}" data-lang="{linenos=table}">Milliseconds in a day       = 86400000 milliseconds
+<pre><code>Milliseconds in a day       = 86400000 milliseconds
 Unix epoch = DATE(1970,1,1) = 25569    milliseconds
 </code></pre><p>So to convert the timestamp we need to:</p>
-<pre><code class="language-{linenos=table}" data-lang="{linenos=table}">=(timestamp / 86400000) + 25569 = 07/07/2020 07:58:41.012 
+<pre><code>=(timestamp / 86400000) + 25569 = 07/07/2020 07:58:41.012 
 </code></pre><p>To display the date time correctly you need to set the format of the calculation field to be a custom format of: <code>dd/mm/yyyy hh:mm:ss.000</code></p>
 <p>This though does not take local time into account. To include local time we must add the number of hours (in milliseconds) to the time stamp:</p>
-<pre><code class="language-{linenos=table}" data-lang="{linenos=table}">Milliseconds in an hour = 3600000
+<pre><code>Milliseconds in an hour = 3600000
 
 =((timestamp + (TimezoneOffset * 3600000)) / 86400000) + 25569
 
 eg. British Summer time (UTC+1h)
 
 =((timestamp + (1 * 3600000)) / 86400000) + 25569 = 07/07/2020 08:58:41.012
-
 </code></pre>
 </div>
 
