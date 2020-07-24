@@ -17,7 +17,7 @@
       <pubDate>Wed, 08 Jul 2020 00:00:00 +0000</pubDate>
       
       <guid>https://moose56.com/2020/07/08/jmeter-timestamp-to-date-time/</guid>
-      <description>&lt;p&gt;By default jMeter uses Java&amp;rsquo;s &lt;code&gt;System.currentTimeMillis()&lt;/code&gt; to time stamp each row in its result files. There are various &lt;a href=&#34;https://jmeter.apache.org/usermanual/listeners.html&#34;&gt;options in the jMeter properties file&lt;/a&gt; to change this default behavior and output a formatted date. However if you have result files already with the millisecond time stamp format you might need to convert it to a date time format in a variety of languages or tools.&lt;/p&gt;</description>
+      <description>&lt;p&gt;By default, jMeter uses Java&amp;rsquo;s &lt;code&gt;System.currentTimeMillis()&lt;/code&gt; to time stamp each row in its result files. There are various &lt;a href=&#34;https://jmeter.apache.org/usermanual/listeners.html&#34;&gt;options in the jMeter properties file&lt;/a&gt; to change this default behavior and output a formatted date. However if you have result files already with the millisecond time stamp format you might need to convert it to a date time format in code or Excel.&lt;/p&gt;</description>
     </item>
     
   </channel>
